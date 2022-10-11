@@ -14,8 +14,12 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.red)
             Text("Swift Starter App").foregroundColor(.blue)
+            Button(action: {}) {
+                Text("Text Button")
+            }
         }
         .padding()
+      
     }
 }
 
