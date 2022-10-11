@@ -13,11 +13,21 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.red)
-            Text("Swift Starter App").foregroundColor(.blue)
+            Text("Swift Starter App")
+                .padding() // order matters with padding
+                .foregroundColor(.blue) // font color
+                .background(.yellow)
+                .font(.largeTitle)
             Button(action: {}) {
                 Text("Text Button")
+                    .padding()
+                    .foregroundColor(.white) // font color
+                    .bold()
+                    .font(.title)
+                    .background(.gray)
+                    .cornerRadius(50)
             }
-            Circle()
+            Circle().foregroundColor(.green)
             HStack {
                 VStack {
                     // Column 1
